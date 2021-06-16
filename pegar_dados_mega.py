@@ -11,7 +11,7 @@ print ('Pegando jogos...')
 url = 'http://loterias.caixa.gov.br/wps/portal/loterias/landing/megasena/'
 option = Options()
 option.headless = True
-driver = webdriver.Firefox(executable_path=r'C:\Users\jpfla\PycharmProjects\venv\Scripts\geckodriver.exe')
+driver = webdriver.Firefox(executable_path=r'venv\Scripts\geckodriver.exe')
 driver.get(url)
 time.sleep(2)
 driver.execute_script("window.scrollBy(0, 300)")
