@@ -347,3 +347,24 @@ console.log: WebExtensions: reset-default-search: No addons in our list are inst
 
 ###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
 
+1623882884639	geckodriver	INFO	Listening on 127.0.0.1:57504
+1623882888183	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\jpfla\\AppData\\Local\\Temp\\rust_mozprofileEPyQ6s"
+1623882907917	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 772))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))
+1623882963515	Marionette	INFO	Listening on port 57514
+[Parent 6432, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+[Parent 6432, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+1623883023523	Marionette	INFO	Stopped listening on port 57514
+
+###!!! [Child][RunMessage] Error: Channel closing: too lat1623883028662	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\jpfla\\AppData\\Local\\Temp\\rust_mozprofileKKvF47"
+1623883030229	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 772))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))
+1623883044317	Marionette	INFO	Listening on port 57664
+1623883044679	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://loterias.caixa.gov.br/InstitucionalTema/themes/static/js/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: http://loterias.caixa.gov.br/InstitucionalTema/themes/static/js/rybena-1.0.js, line 0: Successfully compiled asm.js code (total compilation time 1502ms)
+1623883079032	Marionette	INFO	Stopped listening on port 57664
