@@ -17,7 +17,7 @@ time.sleep(2)
 driver.execute_script("window.scrollBy(0, 300)")
 
 numeros_list = []
-for jogos in range(2359):
+for jogos in range(2381):
     list_prev = []
     for numero in range(6):
         while True:
