@@ -404,3 +404,39 @@ JavaScript warning: http://loterias.caixa.gov.br/InstitucionalTema/themes/static
 console.log: WebExtensions: reset-default-search: starting.
 console.log: WebExtensions: reset-default-search: No addons in our list are installed.
 1627868336767	Marionette	INFO	Stopped listening on port 64867
+1628616665523	geckodriver	INFO	Listening on 127.0.0.1:60624
+1628616668649	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\jpfla\\AppData\\Local\\Temp\\rust_mozprofileIzKriw"
+1628616675573	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\jpfla\\AppData\\Local\\Temp\\rust_mozprofileIzKriw\\search.json.mozlz4", (void 0)))
+1628616696874	Marionette	INFO	Listening on port 60632
+1628616697384	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://loterias.caixa.gov.br/InstitucionalTema/themes/static/js/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: http://loterias.caixa.gov.br/InstitucionalTema/themes/static/js/rybena-1.0.js, line 0: Successfully compiled asm.js code (total compilation time 242ms)
+1628616711650	Marionette	INFO	Stopped listening on port 60632
+[Child 5384, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:544
+[Parent 7992, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1628619369839	geckodriver	INFO	Listening on 127.0.0.1:60223
+1628619372923	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\jpfla\\AppData\\Local\\Temp\\rust_mozprofileUgdx7p"
+1628619374541	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\jpfla\\AppData\\Local\\Temp\\rust_mozprofileUgdx7p\\search.json.mozlz4", (void 0)))
+1628619379084	Marionette	INFO	Listening on port 60231
+1628619380049	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://loterias.caixa.gov.br/InstitucionalTema/themes/static/js/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: http://loterias.caixa.gov.br/InstitucionalTema/themes/static/js/rybena-1.0.js, line 0: Successfully compiled asm.js code (total compilation time 66ms)
+console.error: services.settings: 
+  Message: TypeError: NetworkError when attempting to fetch resource.
+1628619766668	Marionette	INFO	Stopped listening on port 60231
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+leBfZHjv"
+1628619670295	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\jpfla\\AppData\\Local\\Temp\\rust_mozprofileBfZHjv\\search.json.mozlz4", (void 0)))
+1628619674578	Marionette	INFO	Listening on port 60346
+1628619674848	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://loterias.caixa.gov.br/InstitucionalTema/themes/static/js/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: http://loterias.caixa.gov.br/InstitucionalTema/themes/static/js/rybena-1.0.js, line 0: Successfully compiled asm.js code (total compilation time 67ms)
+1628619690417	Marionette	INFO	Stopped listening on port 60346

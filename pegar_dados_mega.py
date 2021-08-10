@@ -16,15 +16,22 @@ def get_data():
     driver.get(url)
     time.sleep(2)
     driver.execute_script("window.scrollBy(0, 300)")
+    
 
     num_jogos = driver.find_element_by_xpath(f'//*[@id="conteudoresultado"]/div[1]/div/h2/span').text
     num_jogos = num_jogos.split()
     num_jogos = int(num_jogos[1])
+    data2 = pd.read_csv('dados_mega.csv')
+    data2.query('Resultado == "vence"', inplace=True)
+    num_antes = len(data2)
+    dados_antes = data2.values
 
     numeros_list = []
+    numeros_list= dados_antes
+    numeros_list= numeros_list.tolist()
 
-    print (f'\nNumero de Jogos: {num_jogos} \n')
-    for jogos in range(num_jogos):
+    print (f'\nNumero de Jogos: {num_jogos - num_antes} \n')
+    for jogos in range(num_jogos - num_antes):
         list_prev = []
         for numero in range(6):
             while True:
@@ -34,7 +41,7 @@ def get_data():
                     break
                 except:
                     time.sleep(2)
-        numeros_list.append(('vence',list_prev[0], list_prev[1], list_prev[2], list_prev[3], list_prev[4], list_prev[5]))
+        numeros_list.append(['vence',list_prev[0], list_prev[1], list_prev[2], list_prev[3], list_prev[4], list_prev[5]])
         print(f'Jogo {jogos+1}: {list_prev[0]}, {list_prev[1]}, {list_prev[2]}, {list_prev[3]}, {list_prev[4]}, {list_prev[5]}')
         time.sleep(1)
         while True:
@@ -48,7 +55,11 @@ def get_data():
 
     driver.quit()
 
-    for a in range(num_jogos*5): #gerar 11795 jogos aleatorios que não venceram
+    numeros_list_pandas = pd.DataFrame(numeros_list, columns=['Resultado','numero 1','numero 2','numero 3','numero 4','numero 5','numero 6'])
+    numeros_list_pandas.drop(columns=['Resultado'], inplace=True)
+    valores = numeros_list_pandas.values
+
+    for a in range(num_jogos*5): #gerar jogos aleatorios que não venceram
         while True:
             list_prev = []
             for b in range(6):
@@ -61,9 +72,10 @@ def get_data():
                     if gerar not in list_prev:
                         list_prev.append(gerar)
                         break
-            if list_prev not in numeros_list:
+            
+            if list_prev not in valores:
                 list_prev.sort()
-                numeros_list.append(('perde',list_prev[0], list_prev[1], list_prev[2], list_prev[3], list_prev[4], list_prev[5]))
+                numeros_list.append(['perde',list_prev[0], list_prev[1], list_prev[2], list_prev[3], list_prev[4], list_prev[5]])
                 break
     random.shuffle(numeros_list)
     data = pd.DataFrame(numeros_list, columns=['Resultado','numero 1','numero 2','numero 3','numero 4','numero 5','numero 6'])
