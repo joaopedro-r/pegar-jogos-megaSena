@@ -11,7 +11,7 @@ def gerar_mega():
     total_jogos = 0
     loaded_model = pickle.load(open('modelo_mega.pkl', 'rb'))
     while True:
-        gerar_numeros.generate_mega()
+        gerar_numeros.generate('mega sena')
         numeros_gerados = pd.read_csv('numeros_previsao.csv')
         y_pred = loaded_model.predict(numeros_gerados)
         prob = loaded_model.predict_proba(numeros_gerados)
@@ -44,7 +44,7 @@ def gerar_lotoFacil():
     total_jogos = 0
     loaded_model = pickle.load(open('modelo_lotoFacil.pkl', 'rb'))
     while True:
-        gerar_numeros.generate_lotoFacil()
+        gerar_numeros.generate('loto facil')
         numeros_gerados = pd.read_csv('numeros_previsao.csv')
         y_pred = loaded_model.predict(numeros_gerados)
         prob = loaded_model.predict_proba(numeros_gerados)
@@ -157,12 +157,12 @@ while True:
         if new_opcao == 1:
             certeza = int(input('Tem Certeza? este processo pode levar algumas horas\n1- Sim\n2- Não\n'))
             if certeza == 1:
-                pegar_dados_mega.get_data_mega()
+                pegar_dados_mega.get_data('mega sena')
                 treino.train_mega()
         else:
             certeza = int(input('Tem Certeza? este processo pode levar algumas horas\n1- Sim\n2- Não\n'))
             if certeza == 1:
-                pegar_dados_mega.get_data_lotofacil()
+                pegar_dados_mega.get_data('loto facil')
                 treino.train_lotoFacil()
     elif opcao == 4:
         break
